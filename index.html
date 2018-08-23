@@ -1,0 +1,110 @@
+<!DOCTYPE html>  https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_pagination_center (centered pagination)
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_pagination (makes it responsive)
+<html>
+<title>JOURNALST</title>
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+</style>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<!-- NAVIGATION BAR -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="mainj.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MY JOURNAL</a>
+      <a href="Scheduling.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TASKS</a>
+      <a href="Inspiration.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INSPIRATION</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+
+          <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+
+        </div>
+      </div>
+
+  </div>
+</div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="journal.png" style="width:50%; height:600px">
+    <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-32 w3-hide-small">
+      <h1><i>Journal</i></h1>
+      <p><i>Create your very own journal!</i></p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="journal.png" style="width:50%; height:600px ">
+    <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-32 w3-hide-small">
+      <h1><i>Inspiration</i></h1>
+      <p><i>Get motivated with quotes!</i></p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="journal.png" style="width:50%; height:600px">
+    <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-32 w3-hide-small">
+      <h1 style="color:black; alignment:center;"><i>TO DO</i></h1>
+      <p style="color:black"><i>Create your to do list, organizing it by 'priorities' and 'for later'!</i></p>
+    </div>
+  </div>
+
+  <!-- The Home Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="home">
+    <h2 class="w3-wide"><b>OUR GOAL</b></h2>
+    <p class="w3-justify">We created Journalst to provide people the ability to create their own bullet journals in a clean and neat way. The website also consists of a motivational page to positively encourage users to stay productive, an inspiration page full of examples of other bullet journals, and a scheduling page for those who want to organize their routines. We hope Journalst will be a useful tool for you! - A.E.M. </p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p><i>Michelle Dominguez</i></p>
+      </div>
+      <div class="w3-third">
+        <p><i>Estefania Guzman</i></p>
+
+      </div>
+      <div class="w3-third">
+        <p><i>Ariel Bastien</i></p>
+
+      </div>
+      <img src="theteam.jpg" width=60% >
+    </div>
+  </div>
+  <script>
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 4000);
+  }
+
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+</html>

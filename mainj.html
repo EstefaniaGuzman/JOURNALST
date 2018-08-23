@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JOURNALST</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<style>
+body{
+  background-image:url("http://www.wallpast.com/wp-content/uploads/2017/12/white-desktop-background-white-desktop-background-white-background-desktop-icons-white-marble-desktop-background-white-tiger-desktop.png");
+}
+#CreateNew{
+  width:50px;
+  height:50px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card" style="margin-bottom: 0;">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="mainj.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MY JOURNAL</a>
+      <a href="Scheduling.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TASKS</a>
+      <a href="Inspiration.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INSPIRATION</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="w3-transparent" id="schedule">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Your Journal:</h2>
+      <p class="w3-opacity w3-center"><i>Add a new box to your journal by clicking on the plus sign! </i></p>
+
+    </div>
+  </div>
+
+ <div >
+    <form id="createnew">
+          <img src="Plus_Sign.png" width="50" height="50" onclick="myFunction();">
+    </form>
+ </div>
+  <script >
+  function myFunction() {
+    var x = document.createElement("TEXTAREA");
+    document.body.appendChild(x);
+}
+  </script>
+
+
+
+
+</html>
